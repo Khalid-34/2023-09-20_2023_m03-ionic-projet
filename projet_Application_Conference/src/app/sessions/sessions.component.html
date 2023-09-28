@@ -9,19 +9,19 @@
   <ion-content class="ion-padding" routerLink="/presentateur">
     presentation</ion-content
   >
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title routerLink="/home">Menu</ion-title>
-  </ion-toolbar>
-  <ion-content class="Blank">
-    <div *ngFor="let session of sessions">
-      <h3>{{ session?.title }}</h3>
-      <p>titleMobile: {{ session?.titleMobile }}</p>
-      <p>image : {{ session?.image }}</p>
-      <p>description : {{ session?.description }}</p>
-      <p>category : {{ session?.category }}</p>
-    </div>
-  </ion-content>
 </ion-menu>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title routerLink="/home">Menu</ion-title>
+</ion-toolbar>
+<ion-content class="Blank">
+  <div *ngFor="let session of sessions">
+    <h3>{{ session?.title }}</h3>
+    <p>titleMobile: {{ session?.titleMobile }}</p>
+    <p>image : {{ session?.image }}</p>
+    <p>description : {{ session?.description }}</p>
+    <p>category : {{ session?.category }}</p>
+  </div>
+</ion-content>
