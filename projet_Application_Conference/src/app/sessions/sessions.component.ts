@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SpeakerService } from '../speaker.service';
+import { SessionService } from '../session.service';
 
 @Component({
   selector: 'app-sessions',
@@ -9,11 +9,11 @@ import { SpeakerService } from '../speaker.service';
 export class SessionsComponent implements OnInit {
   sessions!: any[];
 
-  constructor(private speakerService: SpeakerService) {}
+  constructor(private sessionService: SessionService) {}
 
   ngOnInit() {
-    this.speakerService.getSpeakers().subscribe((data) => {
-      this.sessions = data;
+    this.sessionService.getSession().subscribe((data) => {
+      this.sessions = Object.values(data);
     });
   }
 }

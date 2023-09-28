@@ -1,7 +1,9 @@
-<div *ngFor="let session of sessions">
-  <h3>{{ session.title }}</h3>
-  <p>Date : {{ session.date }}</p>
-  <p>Heure : {{ session.time }}</p>
-  <p>Conférencier : {{ session.speaker }}</p>
-  <p>Description : {{ session.description }}</p>
-</div>
+<ion-content class="Blank">
+  <div *ngFor="let session of sessions">
+    <h3>{{ session?.title }}</h3>
+    <p>titleMobile: {{ session?.titleMobile }}</p>
+    <p>image : {{ session?.image }}</p>
+    <p>description : {{ session?.description }}</p>
+    <p>category : {{ session?.category }}</p>
+  </div>
+</ion-content>

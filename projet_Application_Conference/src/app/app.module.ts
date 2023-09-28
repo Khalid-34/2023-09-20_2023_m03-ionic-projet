@@ -7,9 +7,11 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SessionsComponent } from './sessions/sessions.component';
+import { PresentateursComponent } from './presentateurs/presentateurs.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SessionsComponent, PresentateursComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

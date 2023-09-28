@@ -1,3 +1,10 @@
-<p>
-  presentateurs works!
-</p>
+<ion-content class="Blank">
+  <div *ngFor="let speaker of speakers">
+    <h3>{{ speaker.title }}</h3>
+    <p>Nom : {{ speaker.name }}</p>
+    <p>company : {{ speaker.company }}</p>
+    <p>companyLogo : {{ speaker.companyLogo }}</p>
+    <p>country : {{ speaker.country }}</p>
+    <p>biographie: {{ speaker.bio }}</p>
+  </div>
+</ion-content>
